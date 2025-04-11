@@ -1,0 +1,32 @@
+# USB Threat Detection & Prevention Dependencies
+
+# Core dependencies
+watchdog>=2.1.9
+psutil>=5.9.0
+requests>=2.28.1
+python-gnupg>=0.4.7
+pyudev>=0.24.0
+
+# Windows-specific dependencies
+pywinusb>=0.4.2; platform_system=="Windows"
+wmi>=1.5.1; platform_system=="Windows"
+pywin32>=303; platform_system=="Windows"
+
+# Linux-specific dependencies
+pyusb>=1.2.1; platform_system=="Linux"
+
+# Optional dependencies for enhanced functionality
+# Uncomment if you want to use these features
+# pycryptodome>=3.15.0  # For enhanced encryption
+# virustotal-api>=1.1.11  # For VirusTotal integration
+# psycopg2-binary>=2.9.5  # For database logging
+# flask>=2.2.3  # For web interface
+# flask-socketio>=5.3.3  # For real-time updates
+
+# Development/Testing (optional)
+pytest>=6.2.5
+pytest-cov>=2.12.1
+mypy>=0.910
+flake8>=3.9.2
+
+
